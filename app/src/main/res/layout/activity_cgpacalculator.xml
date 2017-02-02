@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cgpacalculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mohammedismail.a2in1calculator.CGPACalculator">
+
+
+    <TextView
+        android:text="CGPA"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultcgpa" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/resultcgpa"
+        android:layout_marginTop="80dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:background="@color/colorlightchocolate"
+            android:text=" "
+            android:textSize="30sp"
+            android:layout_marginRight="3dp"
+            android:ems="10"
+            android:hint="CREDIT HOUR"
+            android:id="@+id/cetxt1"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:background="@color/colorlightchocolate"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:inputType="number"
+            android:hint="GPA"
+            android:text=" "
+            android:ems="10"
+            android:id="@+id/cetxt2"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Result"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/r_back"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

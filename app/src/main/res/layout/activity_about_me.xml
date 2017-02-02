@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorallbody"
+    tools:context="com.example.mohammedismail.a2in1calculator.AboutMe">
+
+    <TextView
+        android:text="About Me"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/round_back"
+        android:id="@+id/abt" />
+
+    <TextView
+        android:text="Mohammed Ismail
+        International Islamic University Chittagong
+        Mobile: +88 01616 742844
+        e-mail: ismailrajib91@gmail.com"
+        android:textColor="@color/colorlgreen"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_backtxt"
+        android:layout_marginTop="34dp"
+        android:id="@+id/me"
+        android:layout_below="@+id/abt"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/asd"
+        android:layout_below="@+id/me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:id="@+id/imageView2" />
+
+</RelativeLayout>
